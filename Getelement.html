@@ -1,0 +1,26 @@
+<!-- javascript getElementById -->
+<html>
+<script>
+function squareno()
+{
+var a=parseInt(document.getElementById("t1").value);
+t2.value=a*a;
+}
+function cubeno()
+{
+var a=parseInt(document.getElementById("t1").value);
+t2.value=a*a*a;
+}
+</script>
+<body>
+<h1><center>Mphasis Student's Calculator</center></h1><hr color=red>
+<table>
+<tr><td>Enter a number<td><input type=text id=t1 size=20></tr>
+<tr><td><td>
+<input type=submit value=square onclick=squareno()>
+<input type=submit value=cube onclick=cubeno()>
+</tr>
+<tr><td>Answer<td><input type=text id=t2 size=20></tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<script>
+function emp(id,name,address)
+{
+this.id=id; <!-- this refers to local variables which get assgined with the parameters we pass both shld be same name -->
+this.name=name;
+this.address=address;
+}
+id=prompt("Enter your ID");
+name=prompt("Enter your name");
+add=prompt("Enter your adress");
+
+x=new emp(id,name,add); <!-- Constructor -->
+
+document.write(x.id+"   "+x.name+"  "+x.address);
+</script>
+</html>
