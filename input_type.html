@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+</head>
+<body>
+    <form action="/action">
+        <input type="checkbox" name="age" id="age" checked/>
+        <label for="age">I am 18+</label><br/>
+        <h3>If all the name atrribute are diffrent then we can select multiple options</h3>
+        <input type="radio" name="fruit" id="apple" value="apple"/>
+        <label for="apple">Apple</label><br />
+        <input type="radio" name="fruit" id="mango" value="mango"/>
+        <label for="apple">Mango</label><br />
+        <input type="radio" name="fruit" id="orange" value="orange"/>
+        <label for="apple">Orange</label><br />
+        <hr>
+        <h3><b>In checkbox when you group with names we can select multiple checkbox</b></h3>
+        Choose your subject
+        <input type="checkbox" name="subjects" id="math" checked/>
+        <label for="math">Maths</label><br/>
+        <br/>
+        <input type="checkbox" name="subjects" id="science" checked/>
+        <label for="science">Science</label><br/>
+        <br/>
+        <input type="checkbox" name="subjects" id="sst" checked/>
+        <label for="sst">sst</label><br/>       
+        <hr>
+        <div>
+            Choose your Profession
+            <select name="prof" id="profession">
+                <option value="profession">Select your profession</option>
+                <option value="stu">Student</option>
+            <option value="dev">Developer</option>
+            </select>
+        </div>
+        <br/>
+        <div>
+            <label for="vol">Select your vaolume level :</label>
+            <input type="range" name="vol" id="vol" min="0" max="100" step="10"/>
+        </div>
+        <br/>
+        <label for="feedback">Please give your feedback</label>
+        <textarea name="feedback" id="feedback" cols="10" rows="5" value="feed"></textarea>
+        <button>submit</button>
+    </form>
+</body>
+</html>
